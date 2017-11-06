@@ -3,12 +3,13 @@ import { Provider } from 'react-redux';
 
 import './App.css';
 
-import logo from '../logo.svg';
+import logo from '../../logo.svg';
 
-import store from '../store';
+import store from '../../store';
 
-import ReduxActions from '../ReduxActions';
+// import ReduxActions from '../ReduxActions';
 
+import LoginForm from '../LoginForm';
 
 class App extends Component {
   render() {
@@ -19,9 +20,10 @@ class App extends Component {
             <img src={logo} className="App-logo" alt="logo" />
             <h1 className="App-title">Welcome to React</h1>
           </header>
-          <p className="App-Redux">
-            <ReduxActions/>
-          </p>
+          <div className="App-Redux">
+            {/* <ReduxActions/> */}
+            <LoginForm />
+          </div>
 
         </div>
       </Provider>

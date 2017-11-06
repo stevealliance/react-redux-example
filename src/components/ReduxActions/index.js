@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux';
 import {
   requestAddItem,
   requestPageData,
-} from '../modules/ui/actions';
+} from '../../modules/ui/actions';
 
 class ReduxActions extends Component {
   constructor(){
